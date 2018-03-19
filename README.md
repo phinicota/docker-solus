@@ -6,7 +6,7 @@
 
 Make a directory to build the image and then install base system in to that directory.
 
-'''bash
+```bash
 mkdir -p /tmp/solus
 sudo eopkg ar Solus https://packages.solus-project.com/shannon/eopkg-index.xml.xz -D /tmp/solus
 sudo eopkg update-repo
@@ -28,7 +28,7 @@ sudo tar -cvpJf /tmp/solus-base-image.tar.xz -C /tmp/solus/ .
 
 Now the image has been created you can move it where you want to store it for later use.
 
-'''bash
+```bash
 sudo mv /tmp/solus-base-image.tar.xz /location/you/want/to/keep/it
 ```
 
