@@ -37,7 +37,7 @@ sudo mv /tmp/solus-base-image.tar.xz /location/you/want/to/keep/it
 Remove the tmp directory
 
 ```bash
-sudo rm solus/ -rf
+sudo rm /tmp/solus/ -rf
 ```
 
 
