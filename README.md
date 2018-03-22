@@ -9,7 +9,6 @@ Make a directory to build the image and then install base system in to that dire
 ```bash
 mkdir -p /tmp/solus
 sudo eopkg ar Solus https://packages.solus-project.com/shannon/eopkg-index.xml.xz -D /tmp/solus
-sudo eopkg update-repo
 sudo eopkg install baselayout -D /tmp/solus --ignore-safety
 sudo eopkg install -c system.base -D /tmp/solus
 ```
