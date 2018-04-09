@@ -4,7 +4,7 @@ FROM scratch
 ADD solus-base-image.tar.xz /
 ENV container docker
 STOPSIGNAL SIGRTMIN+3
-RUN mkdir /run/lock && mkdir /run/mount && mkdir /var/mail && mkdir /var/opt && mkdir /var/local
+RUN mkdir -p /run/lock && mkdir -p /run/mount && mkdir -p /var/mail && mkdir -p /var/opt && mkdir -p /var/local
 #RUN useradd user 
 #&& usermod -aG sudo user /
 # Add none root user
