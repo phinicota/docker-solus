@@ -1,8 +1,10 @@
 # Solus Linux running in Docker
 
-# Create the base image for docker
+## Create the base image for docker
 
-## On solus system
+### On solus system
+
+### You can do the steps below or just run `./build-solus-tar.sh`
 
 Make a directory to build the image and then install base system in to that directory.
 
@@ -39,34 +41,9 @@ Remove the tmp directory
 sudo rm /tmp/solus/ -rf
 ```
 
-
 ## Not on a Solus Linux system
 On your system you will need install
 
 make
 docker
 
-cd in to pisi and run make build to create pisi docker image.
-Then create a temp docker directory for creating the Linux Solus files.
-Copy the run.sh bash script to the temp directory.
-
-```bash
-cd pisi
-make build
-mkdir -p /tmp/docker/
-sudo cp ./run.sh /tmp/docker/
-```
-
-then run the docker image.
-```bash
-make run
-```
-In the docker image go to home and then run the bash script to create the solus files.
-```bash
-cd /home
-./run.sh
-```
-
-# Setup docker 
-
-# Running docker 
