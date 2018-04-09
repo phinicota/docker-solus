@@ -1,15 +1,15 @@
 build:
-	docker build -t solus-build .
+	sudo docker build -t solus-build .
 
 run:
-	docker run -it \
+	sudo docker run -it \
 	--volume=/tmp:/home \
 	--name solus-build \
 	solus-build:latest \
 	bash
 
 remove:
-	docker rmi solus-build
+	sudo docker rmi solus-build
 
 help:
 	@echo 'build  -> Build docker image'
