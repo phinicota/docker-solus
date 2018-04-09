@@ -9,9 +9,9 @@ run:
 	bash
 
 remove:
-	docker rm solus-build
+	docker rmi solus-build
 
 help:
 	@echo 'build  -> Build docker image'
 	@echo 'run    -> Run the docker image'
-	@echo 'remove -> Remove docker file'
+	@echo 'remove -> Remove docker image'
