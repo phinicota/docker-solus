@@ -9,7 +9,7 @@ run:
 	bash
 
 remove:
-	sudo docker rmi solus-build
+	sudo docker rm solus-build
 
 help:
 	@echo 'build  -> Build docker image'
