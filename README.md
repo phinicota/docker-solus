@@ -1,5 +1,8 @@
 # Solus Linux running in Docker
 
+## Solus image for downloading
+https://www.solus-project.com/image_root/
+
 ## Create the base image for docker
 
 ### On solus system
